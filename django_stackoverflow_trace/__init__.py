@@ -13,7 +13,7 @@ def _patch_django_debug_view():
     replace_point = '<table class="meta">'
     replacement = new_data + replace_point
 
-    # monkey path the built-in template.
+    # monkey patch the built-in template.
     debug.TECHNICAL_500_TEMPLATE = debug.TECHNICAL_500_TEMPLATE.replace(
         replace_point,
         replacement,
