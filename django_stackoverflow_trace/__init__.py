@@ -5,7 +5,7 @@ def _patch_django_debug_view():
 
     new_data = """
         <h3 style="margin-bottom:10px;">
-            <a href="https://www.google.com.tr/#q=site:stackoverflow.com+django+{{ exception_value|force_escape }}"
+            <a href="http://stackoverflow.com/search?q=[python] or [django]+{{ exception_value|force_escape }}"
              target="_blank">View in Stackoverflow</a>
         </h3>
     """
