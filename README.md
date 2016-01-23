@@ -1,8 +1,7 @@
 django-stackoverflow-trace
 ================
 
-A custom Django technical error template that puts a stackoverflow search link above the related exception message.
-
+A custom Django technical error template that puts a related stackoverflow search link under the exception message.
 
 ### Installation
 
