@@ -15,7 +15,7 @@ Add the custom middleware to your ```MIDDLEWARE_CLASSES``` in the **settings.py*
 
 
 ```python
-if settings.DEBUG: 
+if DEBUG: 
 	MIDDLEWARE_CLASSES += ('django_stackoverflow_trace.DjangoStackoverTraceMiddleware', )
 ```
 
