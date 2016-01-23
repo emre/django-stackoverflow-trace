@@ -2,7 +2,7 @@ from setuptools import find_packages, setup
 
 setup(
     name='django_stackoverflow_trace',
-    version='0.0.1',
+    version='0.0.2',
     packages=find_packages(),
     url='https://github.com/emre/django-stackoverflow-trace',
     license='MIT',
