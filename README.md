@@ -3,23 +3,21 @@ django-stackoverflow-trace
 
 A custom Django 'technical' error template that you have an extra link to stackoverflow search w/ the related ```exception_value```.
 
-### installation
+### Installation
 
 ```bash
 $ (sudo) pip install django_stackoverflow_trace
 ```
 
-### setting it up
+### Setting it up
 
-Add the custom middleware to your ```MIDDLEWARE_CLASSES```.
+Add the custom middleware to your ```MIDDLEWARE_CLASSES``` in the **settings.py**.
 
 
 ```python
 if settings.DEBUG: 
 	MIDDLEWARE_CLASSES += ('django_stackoverflow_trace.DjangoStackoverTraceMiddleware', )
 ```
-
-all set. 
 
 Next time you hit an error in your app, you will see an external link to a custom google search.
 
