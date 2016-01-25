@@ -23,3 +23,9 @@ Next time you hit an error in your app, you will see an external link to a custo
 
 <img src="http://s8.postimg.org/xu0kb8m2t/Screen_Shot_2016_01_23_at_11_10_11.png">
 
+### Using google search instead of stackoverflow
+
+Add this into your settings.py
+
+```DJANGO_STACKOVERFLOW_TRACE_SEARCH_SITE = "googlesearch"```
+

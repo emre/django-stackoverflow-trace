@@ -8,7 +8,7 @@ def get_search_link():
     search_urls = {
         "stackoverflow": "http://stackoverflow.com/search?q=[python] or "
                          "[django]+{{ exception_value|force_escape }}",
-        "googlesearch": "https://www.google.com.tr/#q=site:stackoverflow.com"
+        "googlesearch": "https://www.google.com.tr/#q="
                         "+django+{{ exception_value|force_escape }}"
     }
 
