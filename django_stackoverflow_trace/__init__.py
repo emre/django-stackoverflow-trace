@@ -44,7 +44,8 @@ def _patch_django_debug_view():
 class DjangoStackoverTraceMiddleware(object):
 
     def __init__(self):
-        _patch_django_debug_view()
+        if settings.DEBUG:
+            _patch_django_debug_view()
 
     def process_response(self, request, response):
         return response
